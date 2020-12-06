@@ -5,111 +5,6 @@
     <meta charset="utf-8">
     
     <title>MarvelDC Theme Park</title>
-<style>
-    body {
-        font-family: Montserrat;
-    }
-
-    .tab {
-        overflow: hidden;
-        border: 1px solid #ccc;
-        background-color: #f1f1f1;
-        display: flex;
-    }
-
-    .tab button {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        height: 60px;
-        width: 50%;
-        align-items: center;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 24px;
-        font-weight: 300;
-        cursor: pointer;
-        position: relative;
-    }
-
-    /* Displaying the content */
-    .tabcontent {
-        display: flex;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Hover state button class */
-    .tab button:hover {
-        background-color: #6abdf8;
-    }
-
-    /* Active button class */
-    .tab button:active {
-        background-color: #fff;
-    }
-
-    .inputBoxNum {
-        margin: 18px;
-        width: 50%;
-    }
-
-    .inputBoxChoice {
-        margin: 18px;
-        width: 40%;
-     
-    }
-
-    #selectMarvel {
-        padding: 20px;
-    }
-
-    input[type="checkbox"] {
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-        verticle-align: bottom;
-        position: relative;
-    }
-
-    label[for="selectMarvel"] {
-        font-size: 20px;
-        margin: 0px 100px 0px 10px;
-    }
-
-    label[for="selectDC"] {
-        font-size: 20px;
-        margin: 0px 100px 0px 10px;
-    }
-
-    input[type="text"] {
-        width: 20px;
-        margin: 10px;
-    }
-
-    label[for="tickets"] {
-        font-size: 1.17em;
-        font-weight: bolder;
-    }
-
-    label[for="calendar"] {
-        font-size: 1.17em;
-        font-weight: bolder;
-    }
-
-    input[type="date"] {
-        cursor: pointer;
-        margin: 20px;
-    }
-
-    input[type="submit"] {
-        text-align: right;
-        cursor: pointer;
-    }
-</style>    
 </head>
 
 <body>
@@ -137,25 +32,24 @@
 
         <input type="submit" onclick="return confirm('Confirm Payment?')" />
     
-<script>
-    function clickHandle(evt, ticketing) {
-    var i, tabcontent, tablinks;
-
-    //clear the previous clicked content
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    //set the tab to be "active"
-    tablinks = document.getElementsByClassName('"tablinks"');
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace("active", " ");
-    }
-    //display the clicked tab and set it to active
-    document.getElementById(ticketing).style.display = "block";
-        evt.currentTarget.classname += "active";
-    }
     
-</script>   
+    
+    <h2>Frequently Asked Questions</h2>
+
+    <button class="accordion">FAQ Question #1</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">FAQ Question #2</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">FAQ Question #3</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
 </body>
 </html>
