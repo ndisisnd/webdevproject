@@ -9,7 +9,49 @@
     <title>MarvelDC Theme Park</title>
   </head>
   <body>
+      <div class="tab">
+        <button class="tablinks" onclick="clickHandle(event, 'Tickets' )">Tickets</button>
+        <button class="tablinks" onclick="clickHandle(event, 'Promo' )">Promo</button>
+    </div>
 
+    <div id="Tickets" class="tabcontent">
+    <div class="inputBoxNum">
+        <label for="tickets">No. of tickets:</label>
+        <input type="text" id="tickets" name="tickets" value="1">
+    <br>
+        <label for="calendar">Calendar:</label>
+        <input type="date" id="calendar" name="calender">
+    </div>
+
+    <div class="inputBoxChoice">
+        <h3> Choose your tickets</h3>
+        <input type="checkbox" id="selectMarvel"></checkbox>
+        <label for="selectMarvel">Marvel</label>
+        <input type="checkbox" id="selectDC"></checkbox>
+        <label for="selectDC">DC</label>
+    </div>
+
+        <input type="submit" onclick="return confirm('Confirm Payment?')" />
+    
+    
+    
+    <h2>Frequently Asked Questions</h2>
+
+    <button class="accordion">FAQ Question #1</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">FAQ Question #2</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">FAQ Question #3</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+      
   <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
