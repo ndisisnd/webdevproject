@@ -1,57 +1,202 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
-    <title>MarvelDC Theme Park</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>MarvelDC Theme Park</title>
+</head>
+
+<!-- DO NOT EDIT THE HEAD CODE ABOVE.
+     If you're adding new frameworks or links,
+     please let Andy know before you
+     make any PR. -->
+
+<body>
+  <div class="container-page">
+
+    <!-- Voting -->
+    <div class="container-vote">
+      <div class="jumbotron-fluid">
+        <div class="vote-container flex-container">
+          <img class="superheroxmas" height="450px" width="500px" alt="superheroesxmas" src="https://i.pinimg.com/originals/b3/1d/ea/b31deaeec1969b57ed01dba111f8c1a7.jpg">
+          <div class="voting-vote voting">
+            <h1>VOTE NOW!</h1>
+            <p class="votedescript">Vote for your favourite superheroes to be dressed up in Christmas costumes. The losing side will receive terrible punishment!</p>
+            <div class="voting-buttons votebuttons">
+
+              <!-- MARVEL BUTTON W POP UP (MODAL) -->
+              <button type="button" class="btn btn-vote btn-danger marvel" data-toggle="modal" data-target="#voteModalmarvel">MARVEL</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="voteModalmarvel" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Thank you!</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Thank you for voting! We hope you get to see your favourite superheroes in kinky costumes!</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">Back to site!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DC BUTTON W POP UP (MODAL) -->
+              <button type="button" class="btn btn-vote btn-primary d-c" data-toggle="modal" data-target="#voteModaldc">D.C</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="voteModaldc" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Thank you!</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Thank you for voting! We hope you get to see your favourite superheroes in kinky costumes!</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">Back to site!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tickets & Promotions -->
+    <div class="container-ticket-promo">
       <div class="tab">
-        <button class="tablinks" onclick="clickHandle(event, 'Tickets' )">Tickets</button>
-        <button class="tablinks" onclick="clickHandle(event, 'Promo' )">Promo</button>
+        <button class="tablinks" onclick="clickHandle(event, 'Tickets')">Tickets</button>
+        <button class="tablinks" onclick="clickHandle(event, 'Promo')">Promo</button>
+      </div>
+
+      <!-- Tickets container -->
+      <div id="Tickets" class="tab-content">
+        <div class="inputBoxNum">
+          <div class="container-ticket-num">
+            <label for="tickets">No. of tickets:</label>
+            <input type="text" id="tickets" name="tickets" value="1">
+          </div>
+          <div class="container-calendar">
+            <label for="calendar">Calendar:</label>
+            <input type="date" id="calendar" name="calendar">
+          </div>
+        </div>
+
+        <div class="inputBoxChoice">
+          <div class="container-ticket-title">
+            <h3> Choose your tickets</h3>
+          </div>
+          <div class="container-ticket-select">
+            <input type="checkbox" id="selectMarvel"></checkbox>
+            <label class="label-checkbox" for="selectMarvel">Marvel</label>
+            <input type="checkbox" id="selectDC"></checkbox>
+            <label class="label-checkbox" for="selectDC">DC</label>
+          </div>
+        </div>
+
+        <div class="container-ticket-submit">
+          <button onclick="return confirm('Confirm Payment?')">Buy Tickets</button>
+        </div>
+      </div>
+
+      <!-- Promotions container -->
+      <div id="Promo" class="tab-content">
+        <div class="container-promo">
+          <div class="promo-box">
+            <p>The promo text should go here.
+              It's usually short and takes
+              three lines.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div class="container-promo">
+          <div class="promo-box">
+            <p>The promo text should go here.
+              It's usually short and takes
+              three lines.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div class="container-promo">
+          <div class="promo-box">
+            <p>The promo text should go here.
+              It's usually short and takes
+              three lines.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div class="container-promo">
+          <div class="promo-box">
+            <p>The promo text should go here.
+              It's usually short and takes
+              three lines.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div id="Tickets" class="tabcontent">
-    <div class="inputBoxNum">
-        <label for="tickets">No. of tickets:</label>
-        <input type="text" id="tickets" name="tickets" value="1">
-    <br>
-        <label for="calendar">Calendar:</label>
-        <input type="date" id="calendar" name="calender">
-    </div>
 
-    <div class="inputBoxChoice">
-        <h3> Choose your tickets</h3>
-        <input type="checkbox" id="selectMarvel"></checkbox>
-        <label for="selectMarvel">Marvel</label>
-        <input type="checkbox" id="selectDC"></checkbox>
-        <label for="selectDC">DC</label>
-    </div>
+    <!-- FAQ -->
+    <div class="container-faq">
+      <h2>Frequently Asked Questions</h2>
 
-        <input type="submit" onclick="return confirm('Confirm Payment?')" />
-    
-    
-    
-    <h2>Frequently Asked Questions</h2>
+      <button class="accordion">FAQ Question #1</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
 
-    <button class="accordion">FAQ Question #1</button>
-    <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
+      <button class="accordion">FAQ Question #2</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
 
-    <button class="accordion">FAQ Question #2</button>
-    <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <button class="accordion">FAQ Question #3</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat..</p>
+      </div>
     </div>
+  </div>
 
-    <button class="accordion">FAQ Question #3</button>
-    <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <!-- CTA -->
+  <div class="container-cta">
+    <h1>Can't find what you're looking for?</h1>
+    <!-- Wrapper Div -->
+    <div>
+      <button class="btn-cta">Send us an enquiry</button>
     </div>
-      
+  </div>
+
   <script src="script.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>

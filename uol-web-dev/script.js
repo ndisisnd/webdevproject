@@ -45,7 +45,7 @@ function clickHandle(evt, ticketing) {
     var i, tabcontent, tablinks;
 
     //clear the previous clicked content
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
