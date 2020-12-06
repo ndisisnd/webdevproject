@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
-    <title>MarvelDC Theme Park</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+  <title>MarvelDC Theme Park</title>
+</head>
+
+<body>
+
+  <div class="mmappics">
+    <img class="mm1" alt="marvel1" src="https://www.picclickimg.com/d/l400/pict/401955416027_/Thor-Doujinshi-Comic-Book-Thor-x-Loki-My.jpg" onclick="toggleVisibility('mm1descrip');">
+
+    <img class="mm2" alt="marvel2" src="https://www.picclickimg.com/d/l400/pict/401955416027_/Thor-Doujinshi-Comic-Book-Thor-x-Loki-My.jpg" onclick="toggleVisibility('mm2descrip');">
+
+    <img class="mm3" alt="marvel3" src="https://www.picclickimg.com/d/l400/pict/401955416027_/Thor-Doujinshi-Comic-Book-Thor-x-Loki-My.jpg" onclick="toggleVisibility('mm3descrip');">
+  </div>
+
+  <div class="descripcontainer">
+    <h2 class="marvelheader">Welcome to the Marvel Site!!</h2>
+    <p class="marvelheader">We have everything Marvel for you here! From attractions, apparel, food & drinks, even the toilets! You can even dress up like your favourite heroes! Click on each attraction to find out more!</p>
+
+    <div id="mm1descrip" class="mmapcontent">
+      <h2 class="hulkironman boxed">Look at Hulk and Iron Man go!</h2>
+      <h3 class="hulkironmandescrip boxed">Welcome to the epic fight between our superheroes! You can join them and help 1 win over the other, who would you support?</h3>
+      <h4 class="riderequirements boxed">
+        Requirements:
+        <br>
+        Age - 13 and above
+        <br>
+        Height - 130cm and above</h4>
+    </div>
+
+    <div id="mm2descrip" class="mmapcontent">
+      <h2 class="brotherlydance boxed">Brotherly Dance-Off</h2>
+      <h3 class="brotherlydancedescrip boxed">Watch Thor and his iconic Mjolnir have a dance-off with his trickster brother, Loki! You will have a chance to dance with your favourite God of Thunder!</h3>
+    </div>
+
+    <div id="mm3descrip" class="mmapcontent">
+      <h2 class="avengerscafe boxed">The Avengers Cafe</h2>
+      <h3 class="avengerscafedescrip boxed">Feeling hungry? Come on in to fill up your tummy! If you are lucky, Ironman, Spiderman or other heroes may swoop in with your food!</h3>
+    </div>
+  </div>
 
   <script src="script.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>
