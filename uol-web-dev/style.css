@@ -38,3 +38,146 @@ navbar-text {
 }
 
 /* Do ensure that your classes are unique and meaningful */
+
+/* FAQ style */
+.accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        font-size:18px;
+    }
+
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+
+    .accordion:after {
+        content: '\02795'; 
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+
+    .active:after {
+        content: "\2796";
+    }
+
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        font-size: 17px;
+    }
+
+/* ticketing style */
+body {
+        font-family: Montserrat;
+    }
+
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        display: flex;
+    }
+
+    .tab button {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 60px;
+        width: 50%;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 300;
+        cursor: pointer;
+        position: relative;
+    }
+
+    /* Displaying the content */
+    .tabcontent {
+        display: flex;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Hover state button class */
+    .tab button:hover {
+        background-color: #6abdf8;
+    }
+
+    /* Active button class */
+    .tab button:active {
+        background-color: #fff;
+    }
+
+    .inputBoxNum {
+        margin: 18px;
+        width: 50%;
+    }
+
+    .inputBoxChoice {
+        margin: 18px;
+        width: 40%;
+     
+    }
+
+    #selectMarvel {
+        padding: 20px;
+    }
+
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        verticle-align: bottom;
+        position: relative;
+    }
+
+    label[for="selectMarvel"] {
+        font-size: 20px;
+        margin: 0px 100px 0px 10px;
+    }
+
+    label[for="selectDC"] {
+        font-size: 20px;
+        margin: 0px 100px 0px 10px;
+    }
+
+    input[type="text"] {
+        width: 20px;
+        margin: 10px;
+    }
+
+    label[for="tickets"] {
+        font-size: 1.17em;
+        font-weight: bolder;
+    }
+
+    label[for="calendar"] {
+        font-size: 1.17em;
+        font-weight: bolder;
+    }
+
+    input[type="date"] {
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    input[type="submit"] {
+        text-align: right;
+        cursor: pointer;
+    }
