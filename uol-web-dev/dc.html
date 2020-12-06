@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
-    <title>MarvelDC Theme Park</title>
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+  <title>MarvelDC Theme Park</title>
+</head>
+
+<body>
+
+  <div class="dc-mappics">
+    <img class="dc1 dc-1" alt="dc1" src="https://vignette.wikia.nocookie.net/9d9d3259-9de9-4200-bb71-26e8fab82789/scale-to-width-down/800" onclick="toggleVisibility('dc1descrip');">
+
+    <img class="dc2 dc-2" alt="dc2" src="https://vignette.wikia.nocookie.net/9d9d3259-9de9-4200-bb71-26e8fab82789/scale-to-width-down/800" onclick="toggleVisibility('dc2descrip');">
+
+    <img class="dc3 dc-3" alt="dc3" src="https://vignette.wikia.nocookie.net/9d9d3259-9de9-4200-bb71-26e8fab82789/scale-to-width-down/800" onclick="toggleVisibility('dc3descrip');">
+  </div>
+
+  <div class="descripcontainer">
+    <h2 class="dcheader">Welcome to the DC Site!!</h2>
+    <p class="dcheader">SHAZAM!! I'm so glad to see you here and I know you are nervous, but do not worry! We have superheroes to help you, food & drinks at the corner, and you can even dress up like your favorite heroes! Click on each attraction to find out more!</p>
+
+    <div id="dc1descrip" class="dcmapcontent">
+      <h2 class="supermanfly boxed">Superman Fly!</h2>
+      <h3 class="supermanflydescrip boxed">Superman is going to fly across the entire theme park and shower you with his laser beams!</h3>
+      <h4 class="riderequirements boxed">
+        Requirements:
+        <br>
+        Age - 13 and above
+        <br>
+        Height - 130cm and above</h4>
+    </div>
+
+    <div id="dc2descrip" class="dcmapcontent">
+      <h2 class="gangfight boxed">Gang Fight!</h2>
+      <h3 class="gangfightdescrip boxed">Quick! Help support Batman and friends save the world from Evil Darkseid, your help is crucial in this battle!</h3>
+      <h4 class="riderequirements">
+        Requirements:
+        <br>
+        Age - 13 and above
+        <br>
+        Height - 130cm and above </h4>
+    </div>
+
+    <div id="dc3descrip" class="dcmapcontent">
+      <h2 class="dcbistro boxed">D.C Bistro</h2>
+      <h3 class="dcbistrodescrip boxed">The Flash has managed to find a way to cook delicious food using his superhuman speed! Do you dare to come try out his cooking?</h3>
+    </div>
+  </div>
+  </div>
   <script src="script.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>
