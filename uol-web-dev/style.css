@@ -1,6 +1,8 @@
-/* This comment is here because the file cannot be empty */
+/* Do not alter the code below, these are the fixed font sizes for the typography */
+* {
+  font-family: 'Work Sans', serif;
+}
 
-/* Do  not alter the code below, these are the fixed font sizes for the typography */
 body {
   font-family: 'Work Sans', serif;
   font-size: 12px;
@@ -9,7 +11,7 @@ body {
 h1 {
   font-family: 'Work Sans', serif;
   font-size: 3em;
-  font-weight: 800
+  font-weight: 800;
 }
 
 h2 {
@@ -18,8 +20,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em
-  font-weight: 400;
+  font-size: 1.5em font-weight: 400;
 }
 
 p {
@@ -37,12 +38,159 @@ navbar-text {
   font-weight: 700;
 }
 
+/* Do not alter the code below. It's to set the whitespace for all the containers */
+.container-page {
+  margin: 10px 120px 10px 120px
+}
+
+.container-vote {
+  padding: 20px;
+}
+
+.container-ticket-promo {
+  padding: 20px;
+}
+
+.container-faq {
+  padding: 20px;
+}
+
+/* Styling for Promotions content and container */
+.container-promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.promo-box {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 24px;
+}
+
+/* Styling for Tickets content and container */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+.tab button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 60px;
+  width: 50%;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bolder;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-content {
+  display: flex;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab button:hover {
+  background-color: #6abdf8;
+}
+
+.tab button:active {
+  background-color: #fff;
+}
+
+.inputBoxNum {
+  margin: 18px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBoxChoice {
+  margin: 18px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#selectMarvel {
+  padding: 20px;
+}
+
+.label-checkbox {
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  verticle-align: bottom;
+  position: relative;
+}
+
+input[type="text"] {
+  width: 20px;
+}
+
+label[for="tickets"] {
+  font-size: 1.17em;
+  font-weight: bolder;
+}
+
+label[for="calendar"] {
+  font-size: 1.17em;
+  font-weight: bolder;
+}
+
+label[for="checkbox"] {
+  font-size: 1.17em;
+}
+
+input[type="date"] {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  text-align: right;
+  cursor: pointer;
+}
+
+.container-ticket-num {
+  padding: 10px;
+}
+
+.container-calendar {
+  padding: 10px;
+}
+
+.container-ticket-title {
+  padding: 10px;
+}
+
+.container-ticket-select {
+  padding: 10px;
+}
+
+.container-ticket-submit {
+  padding: 10px;
+  width: 10%;
+}
+
+
+
+
 .mmapcontent {
   display: none;
   margin-top: 15px;
   width: 100%;
   border: 1px solid black;
-
 }
 
 .boxed {
@@ -61,9 +209,8 @@ navbar-text {
   wdith: 100%;
 }
 
-.mm1{
+.mm1 {}
 
-}
 .mm2 {
   margin-left: 10px;
 }
@@ -84,16 +231,16 @@ navbar-text {
     width: 100%;
   }
 
-  .marvelheader{
+  .marvelheader {
     margin-top: 10px;
     align-text: center;
   }
 
-  .mm3{
+  .mm3 {
     margin-right: 10px;
   }
 
-  .mappics{
+  .mappics {
     display: flex;
     flex-direction: column;
   }
@@ -104,7 +251,6 @@ navbar-text {
   margin-top: 15px;
   width: 100%;
   border: 1px solid black;
-
 }
 
 .dc-mappics {
@@ -153,147 +299,135 @@ navbar-text {
     margin-right: 10px;
   }
 }
-/* Do ensure that your classes are unique and meaningful */
 
-/* FAQ style */
+/* Styling for FAQ */
 .accordion {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        text-align: left;
-        border: none;
-        outline: none;
-        transition: 0.4s;
-        font-size:18px;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 18px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  font-size: 17px;
+}
+
+/* Styling for voting Jumbotron */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .voting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    marging-left: 20px;
+  }
+
+  .votebuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .marvel {
+    width: 250px;
+    height: 110px;
+    right: 20%;
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+
+  .d-c {
+    width: 250px;
+    height: 110px;
+    right: 20%;
+    margin-right: 50px;
+  }
+
+  .marvel:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .d-c:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  @media only screen and (max-width: 320px) {
+
+    /* For mobile phones: */
+    [class*="vote-"] {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .active, .accordion:hover {
-        background-color: #ccc;
+    [class*="voting-"] {
+      width: 100vw!important;
     }
 
-    .accordion:after {
-        content: '\02795'; 
-        font-size: 13px;
-        color: #777;
-        float: right;
-        margin-left: 5px;
+    .superheroxmas {
+      margin-left: 10px;
+      width: 100%;
     }
 
-    .active:after {
-        content: "\2796";
+    .votedescript{
+      margin-left: 10px;
     }
 
-    .panel {
-        padding: 0 18px;
-        background-color: white;
-        display: none;
-        overflow: hidden;
-        font-size: 17px;
+    .btn-vote{
+      padding-left: 15px;
     }
 
-/* ticketing style */
-body {
-        font-family: Montserrat;
+    .d-c{
+      margin-right: 10px;
     }
+  }
 
-    .tab {
-        overflow: hidden;
-        border: 1px solid #ccc;
-        background-color: #f1f1f1;
-        display: flex;
-    }
+/* styling for CTA */
+.container-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
 
-    .tab button {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        height: 60px;
-        width: 50%;
-        align-items: center;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 24px;
-        font-weight: 300;
-        cursor: pointer;
-        position: relative;
-    }
-
-    /* Displaying the content */
-    .tabcontent {
-        display: flex;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Hover state button class */
-    .tab button:hover {
-        background-color: #6abdf8;
-    }
-
-    /* Active button class */
-    .tab button:active {
-        background-color: #fff;
-    }
-
-    .inputBoxNum {
-        margin: 18px;
-        width: 50%;
-    }
-
-    .inputBoxChoice {
-        margin: 18px;
-        width: 40%;
-     
-    }
-
-    #selectMarvel {
-        padding: 20px;
-    }
-
-    input[type="checkbox"] {
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-        verticle-align: bottom;
-        position: relative;
-    }
-
-    label[for="selectMarvel"] {
-        font-size: 20px;
-        margin: 0px 100px 0px 10px;
-    }
-
-    label[for="selectDC"] {
-        font-size: 20px;
-        margin: 0px 100px 0px 10px;
-    }
-
-    input[type="text"] {
-        width: 20px;
-        margin: 10px;
-    }
-
-    label[for="tickets"] {
-        font-size: 1.17em;
-        font-weight: bolder;
-    }
-
-    label[for="calendar"] {
-        font-size: 1.17em;
-        font-weight: bolder;
-    }
-
-    input[type="date"] {
-        cursor: pointer;
-        margin: 20px;
-    }
-
-    input[type="submit"] {
-        text-align: right;
-        cursor: pointer;
-    }
+.btn-cta {
+  text-transform: uppercase;
+  padding: 12px;
+}
