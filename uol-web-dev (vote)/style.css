@@ -1,0 +1,118 @@
+/* This comment is here because the file cannot be empty */
+
+/* Do  not alter the code below, these are the fixed font sizes for the typography */
+body {
+  font-family: 'Work Sans', serif;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: 'Work Sans', serif;
+  font-size: 3em;
+  font-weight: 800
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5em
+  font-weight: 400;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+footer-text {
+  font-size: 0.75em;
+  font-weight: 700;
+}
+
+navbar-text {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .voting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    marging-left: 20px;
+  }
+
+  .votebuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .marvel {
+    width: 250px;
+    height: 110px;
+    right: 20%;
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+
+  .d-c {
+    width: 250px;
+    height: 110px;
+    right: 20%;
+    margin-right: 50px;
+  }
+
+  .marvel:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .d-c:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  @media only screen and (max-width: 320px) {
+
+    /* For mobile phones: */
+    [class*="vote-"] {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    [class*="voting-"] {
+      width: 100vw!important;
+    }
+
+    .superheroxmas {
+      margin-left: 10px;
+      width: 100%;
+    }
+
+    .votedescript{
+      margin-left: 10px;
+    }
+
+    .btn-vote{
+      padding-left: 15px;
+    }
+
+    .d-c{
+      margin-right: 10px;
+    }
+  }

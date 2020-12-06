@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>MarvelDC Theme Park</title>
+</head>
+
+<body>
+  <div class="jumbotron-fluid">
+    <div class="vote-container flex-container">
+      <img class="superheroxmas" height="450px" width="500px" alt="superheroesxmas" src="https://i.pinimg.com/originals/b3/1d/ea/b31deaeec1969b57ed01dba111f8c1a7.jpg">
+      <div class="voting-vote voting">
+        <h1 style="font-size: 80px; text-align:center;">VOTE NOW!</h1>
+        <p style="font-size: 30px; text-align:center;" class="votedescript">Vote for your favourite superheroes to be dressed up in Christmas costumes. The losing side will receive terrible punishment!</p>
+        <div class="voting-buttons votebuttons">
+
+          <!-- MARVEL BUTTON W POP UP (MODAL) -->
+          <button type="button" class="btn btn-vote btn-danger marvel" data-toggle="modal" data-target="#voteModalmarvel">MARVEL</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="voteModalmarvel" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 style="font-size: 30px" class="modal-title">Thank you!</h4>
+                </div>
+                <div style="font-size: 35px" class="modal-body">
+                  <p>Thank you for voting! We hope you get to see your favourite superheroes in kinky costumes!</p>
+                </div>
+                <div class="modal-footer">
+                  <button style="font-size: 20px" type="button" class="btn btn-success" data-dismiss="modal">Back to site!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DC BUTTON W POP UP (MODAL) -->
+          <button type="button" class="btn btn-vote btn-primary d-c" data-toggle="modal" data-target="#voteModaldc">D.C</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="voteModaldc" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 style="font-size: 30px" class="modal-title">Thank you!</h4>
+                </div>
+                <div style="font-size: 35px" class="modal-body">
+                  <p>Thank you for voting! We hope you get to see your favourite superheroes in kinky costumes!</p>
+                </div>
+                <div class="modal-footer">
+                  <button style="font-size: 20px" type="button" class="btn btn-success" data-dismiss="modal">Back to site!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
