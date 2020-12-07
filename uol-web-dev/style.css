@@ -40,7 +40,7 @@ navbar-text {
 
 /* Do not alter the code below. It's to set the whitespace for all the containers */
 .container-page {
-  margin: 10px 120px 10px 120px
+  margin: 10px 120px 0px 120px
 }
 
 .container-vote {
