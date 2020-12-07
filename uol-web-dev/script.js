@@ -58,3 +58,19 @@ function clickHandle(evt, ticketing) {
     document.getElementById(ticketing).style.display = "block";
         evt.currentTarget.classname += "active";
     }
+
+//Navbar script
+function searchClose() {
+    if (document.getElementById("searchicon-change").src == "https://img.icons8.com/ios-glyphs/24/000000/search.png") {
+        document.getElementById("searchicon-change").src = "https://img.icons8.com/ios-filled/24/000000/delete-sign.png";
+}
+    else {
+        document.getElementById("searchicon-change").src = "https://img.icons8.com/ios-glyphs/24/000000/search.png";
+		}
+	}
+function activeSearch() {
+    document.getElementById("searchbar").classList.toggle("show-searchbar");
+}
+function activeNav() {
+    document.getElementById("navres").classList.toggle("show-navres");
+}
