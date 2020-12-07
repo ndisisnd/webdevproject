@@ -431,3 +431,135 @@ input[type="submit"] {
   text-transform: uppercase;
   padding: 12px;
 }
+
+/* styling for Navbar */
+.navbar {
+    padding: 5px;
+	border: 1px solid grey;
+	display: flex;
+	justify-content: space-between;
+}
+.navbar ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+.navbar li {
+	padding-left: 70px;
+	padding-right: 70px;
+	display: flex;
+	justify-content: space-around;
+}
+.themepark-logo {
+	width: 150px;
+	background-color: grey;
+	display: flex;
+}
+.navbar-page-link {
+	font-size: 17px;
+}
+.search-icon {
+	padding-left: 20px;
+	padding-right: 20px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+.search-open {
+	display: none;
+}
+.search-form {
+	width: 100%;
+}
+.search-box {
+    padding: 10px;
+	width: 90%;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	background: #f1f1f1;
+}
+.search-box-icon {
+    padding: 7px;
+    border: 1px solid grey;
+    background: none;
+    min-width: 38px;
+}
+.show-searchbar {
+    padding: 10px;
+	border: 1px solid grey;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.navres-icon {
+	display: none;
+}
+.navres-open {
+	display: none;
+}
+@media only screen and (max-width: 660px) {
+	.navbar {
+	   padding: 5px;
+	   border: 1px solid grey;
+	   display: flex;
+	   justify-content: space-between;
+	}
+	.navbar ul {
+		display: none;
+    }
+    .navbar li {
+        display: none;
+    }
+    .themepark-logo {
+        width: 150px;
+		background-color: grey;
+		display: flex;
+    }
+    .navbar-page-link {
+    	display: none;
+    }
+	.search-box {
+        width: 70%;
+    }
+	.navres-icon {
+        padding: 11px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        display: flex;
+    }
+    .navres-open {
+        display: none;
+    }
+    .navres-open ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .navres-open li {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+    }
+    .show-navres {
+        width: 50%;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+    }
+}
+
+/* Styling for Banner */
+.container-banner {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color:#CDCDCD;
+	display: flex;
+	justify-content: space-around;
+}
+.banner-image {
+	width: 35%;
+}

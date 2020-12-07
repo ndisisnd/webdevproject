@@ -11,6 +11,34 @@
 </head>
 
 <body>
+    
+    <div class="container-navbar">
+        <div class="navbar" id="mynavbar">
+                <button onclick="activeNav()" class="navres-icon"><img src="https://img.icons8.com/ios-glyphs/30/000000/menu-rounded.png"/></button>
+            <!--themepark logo-->
+            <div class="themepark-logo"></div>
+            <!--links to marvel/dc pages-->
+            <ul>
+                <li><a class="navbar-page-link" href="#marvel.html">Marvel</a></li>
+                <li><a class="navbar-page-link" href="#dc.hmtl">DC</a></li>
+            </ul>
+            <button onclick="searchClose();activeSearch()" class="search-icon"><img id="searchicon-change" src="https://img.icons8.com/ios-glyphs/24/000000/search.png"/></button>
+        </div>
+
+        <div id="searchbar" class="search-open">
+            <form class="search-form">
+                    <input class="search-box" type="text" placeholder="Search.." name="search">
+                    <button class="search-box-icon" type="submit"><img src="https://img.icons8.com/ios-glyphs/24/000000/search.png"/></button>
+             </form>
+        </div>
+
+        <div id="navres" class="navres-open">
+            <ul>
+                <li><a class="navres-page-link" href="#marvel.html">Marvel</a></li>
+                <li><a class="navres-page-link" href="#dc.hmtl">DC</a></li>
+            </ul>
+        </div>
+    </div>
 
   <div class="mmappics">
     <img class="mm1" alt="marvel1" src="https://www.picclickimg.com/d/l400/pict/401955416027_/Thor-Doujinshi-Comic-Book-Thor-x-Loki-My.jpg" onclick="toggleVisibility('mm1descrip');">
