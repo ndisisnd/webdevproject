@@ -1,0 +1,565 @@
+/* Do not alter the code below, these are the fixed font sizes for the typography */
+* {
+  font-family: 'Work Sans', serif;
+}
+
+body {
+  font-family: 'Work Sans', serif;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: 'Work Sans', serif;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5em font-weight: 400;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+footer-text {
+  font-size: 0.75em;
+  font-weight: 700;
+}
+
+navbar-text {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+/* Do not alter the code below. It's to set the whitespace for all the containers */
+.container-page {
+  margin: 10px 120px 0px 120px
+}
+
+.container-vote {
+  padding: 20px;
+}
+
+.container-ticket-promo {
+  padding: 20px;
+}
+
+.container-faq {
+  padding: 20px;
+}
+
+/* Styling for Promotions content and container */
+.container-promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.promo-box {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 24px;
+}
+
+/* Styling for Tickets content and container */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+.tab button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 60px;
+  width: 50%;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bolder;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-content {
+  display: flex;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab button:hover {
+  background-color: #6abdf8;
+}
+
+.tab button:active {
+  background-color: #fff;
+}
+
+.inputBoxNum {
+  margin: 18px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBoxChoice {
+  margin: 18px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#selectMarvel {
+  padding: 20px;
+}
+
+.label-checkbox {
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  verticle-align: bottom;
+  position: relative;
+}
+
+input[type="text"] {
+  width: 20px;
+}
+
+label[for="tickets"] {
+  font-size: 1.17em;
+  font-weight: bolder;
+}
+
+label[for="calendar"] {
+  font-size: 1.17em;
+  font-weight: bolder;
+}
+
+label[for="checkbox"] {
+  font-size: 1.17em;
+}
+
+input[type="date"] {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  text-align: right;
+  cursor: pointer;
+}
+
+.container-ticket-num {
+  padding: 10px;
+}
+
+.container-calendar {
+  padding: 10px;
+}
+
+.container-ticket-title {
+  padding: 10px;
+}
+
+.container-ticket-select {
+  padding: 10px;
+}
+
+.container-ticket-submit {
+  padding: 10px;
+  width: 10%;
+}
+
+
+
+
+.mmapcontent {
+  display: none;
+  margin-top: 15px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.boxed {
+  margin-left: 10px;
+}
+
+#about {
+  display: block;
+}
+
+.mmappics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10px;
+  wdith: 100%;
+}
+
+.mm1 {}
+
+.mm2 {
+  margin-left: 10px;
+}
+
+.mm3 {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 360px) {
+
+  /* For mobile phones: */
+  [class*="mm"] {
+    width: 100%;
+    height: 140px;
+  }
+
+  [class*="mmapcontent"] {
+    width: 100%;
+  }
+
+  .marvelheader {
+    margin-top: 10px;
+    align-text: center;
+  }
+
+  .mm3 {
+    margin-right: 10px;
+  }
+
+  .mappics {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.dcmapcontent {
+  display: none;
+  margin-top: 15px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.dc-mappics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10px;
+  wdith: 100%;
+}
+
+.dc1 {
+  height: 400px;
+  width: 275px;
+}
+
+.dc2 {
+  margin-left: 10px;
+  height: 400px;
+  width: 275px;
+}
+
+.dc3 {
+  margin-left: 10px;
+  height: 400px;
+  width: 275px;
+}
+
+@media only screen and (max-width: 360px) {
+
+  /* For mobile phones: */
+  [class*="dc-"] {
+    width: 100%;
+    width: 104px;
+    height: 145px;
+  }
+
+  [class*="dcmapcontent"] {
+    width: 100%;
+  }
+
+  .dcheader {
+    align-text: center;
+  }
+
+  .dc3 {
+    margin-right: 10px;
+  }
+}
+
+/* Styling for FAQ */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 18px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  font-size: 17px;
+}
+
+/* Styling for voting Jumbotron */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .voting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    marging-left: 20px;
+  }
+
+  .votebuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .marvel {
+    width: 250px;
+    height: 110px;
+    right: 20%;
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+
+  .d-c {
+    width: 250px;
+    height: 110px;
+    right: 20%;
+    margin-right: 50px;
+  }
+
+  .marvel:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .d-c:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  @media only screen and (max-width: 320px) {
+
+    /* For mobile phones: */
+    [class*="vote-"] {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    [class*="voting-"] {
+      width: 100vw!important;
+    }
+
+    .superheroxmas {
+      margin-left: 10px;
+      width: 100%;
+    }
+
+    .votedescript{
+      margin-left: 10px;
+    }
+
+    .btn-vote{
+      padding-left: 15px;
+    }
+
+    .d-c{
+      margin-right: 10px;
+    }
+  }
+
+/* styling for CTA */
+.container-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.btn-cta {
+  text-transform: uppercase;
+  padding: 12px;
+}
+
+/* styling for Navbar */
+.navbar {
+    padding: 5px;
+	border: 1px solid grey;
+	display: flex;
+	justify-content: space-between;
+}
+.navbar ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+.navbar li {
+	padding-left: 70px;
+	padding-right: 70px;
+	display: flex;
+	justify-content: space-around;
+}
+.themepark-logo {
+	width: 150px;
+	background-color: grey;
+	display: flex;
+}
+.navbar-page-link {
+	font-size: 17px;
+}
+.search-icon {
+	padding-left: 20px;
+	padding-right: 20px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+.search-open {
+	display: none;
+}
+.search-form {
+	width: 100%;
+}
+.search-box {
+    padding: 10px;
+	width: 90%;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	background: #f1f1f1;
+}
+.search-box-icon {
+    padding: 7px;
+    border: 1px solid grey;
+    background: none;
+    min-width: 38px;
+}
+.show-searchbar {
+    padding: 10px;
+	border: 1px solid grey;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.navres-icon {
+	display: none;
+}
+.navres-open {
+	display: none;
+}
+@media only screen and (max-width: 660px) {
+	.navbar {
+	   padding: 5px;
+	   border: 1px solid grey;
+	   display: flex;
+	   justify-content: space-between;
+	}
+	.navbar ul {
+		display: none;
+    }
+    .navbar li {
+        display: none;
+    }
+    .themepark-logo {
+        width: 150px;
+		background-color: grey;
+		display: flex;
+    }
+    .navbar-page-link {
+    	display: none;
+    }
+	.search-box {
+        width: 70%;
+    }
+	.navres-icon {
+        padding: 11px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        display: flex;
+    }
+    .navres-open {
+        display: none;
+    }
+    .navres-open ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .navres-open li {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+    }
+    .show-navres {
+        width: 50%;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+    }
+}
+
+/* Styling for Banner */
+.container-banner {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color:#CDCDCD;
+	display: flex;
+	justify-content: space-around;
+}
+.banner-image {
+	width: 35%;
+}
