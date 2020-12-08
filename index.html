@@ -1,0 +1,276 @@
+main<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>MarvelDC Theme Park</title>
+</head>
+
+<!-- DO NOT EDIT THE HEAD CODE ABOVE.
+     If you're adding new frameworks or links,
+     please let Andy know before you
+     make any PR. -->
+
+<body>
+
+
+
+  <div class="container-page">
+
+    <!-- Navbar -->
+    <div class="container-navbar">
+      <div class="navbar" id="mynavbar">
+        <button onclick="activeNav()" class="navres-icon"><img src="https://img.icons8.com/ios-glyphs/30/000000/menu-rounded.png" /></button>
+        <!--themepark logo-->
+        <div class="themepark-logo"></div>
+        <!--links to marvel/dc pages-->
+        <ul>
+          <li><a class="navbar-page-link" href="#marvel.html">Marvel</a></li>
+          <li><a class="navbar-page-link" href="#dc.html">DC</a></li>
+        </ul>
+        <button onclick="searchClose();activeSearch()" class="search-icon"><img id="searchicon-change" src="https://img.icons8.com/ios-glyphs/24/000000/search.png" /></button>
+      </div>
+
+      <div id="searchbar" class="search-open">
+        <form class="search-form">
+          <input class="search-box" type="text" placeholder="Search.." name="search">
+          <button class="search-box-icon" type="submit"><img src="https://img.icons8.com/ios-glyphs/24/000000/search.png" /></button>
+        </form>
+      </div>
+
+      <div id="navres" class="navres-open">
+        <ul>
+          <li><a class="navres-page-link" href="marvel.html">Marvel</a></li>
+          <li><a class="navres-page-link" href="dc.html">DC</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="container-banner">
+      <img class="banner-image" src="https://images.unsplash.com/photo-1588497859490-85d1c17db96d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" alt="comics">
+      <img class="banner-image" src="https://images.unsplash.com/photo-1587270613291-b5c7042fc104?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" alt="comics">
+    </div>
+
+    <!-- Voting -->
+    <div class="container-vote">
+      <div class="jumbotron-fluid">
+        <div class="vote-container flex-container">
+          <img class="superheroxmas" height="450px" width="500px" alt="superheroesxmas" src="https://i.pinimg.com/originals/b3/1d/ea/b31deaeec1969b57ed01dba111f8c1a7.jpg">
+          <div class="voting-vote voting">
+            <h1>VOTE NOW!</h1>
+            <p class="votedescript">Vote for your favourite superheroes to be dressed up in Christmas costumes. The losing side will receive terrible punishment!</p>
+            <div class="voting-buttons votebuttons">
+
+              <!-- MARVEL BUTTON W POP UP (MODAL) -->
+              <button type="button" class="btn btn-vote btn-danger marvel" data-toggle="modal" data-target="#voteModalmarvel">MARVEL</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="voteModalmarvel" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Thank you!</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Thank you for voting! We hope you get to see your favourite superheroes in kinky costumes!</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">Back to site!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DC BUTTON W POP UP (MODAL) -->
+              <button type="button" class="btn btn-vote btn-primary d-c" data-toggle="modal" data-target="#voteModaldc">D.C</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="voteModaldc" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Thank you!</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Thank you for voting! We hope you get to see your favourite superheroes in kinky costumes!</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">Back to site!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tickets & Promotions -->
+    <div class="container-ticket-promo">
+      <div class="tab">
+        <button class="tablinks" onclick="clickHandle(event, 'Tickets')">Tickets</button>
+        <button class="tablinks" onclick="clickHandle(event, 'Promo')">Promo</button>
+      </div>
+
+      <!-- Tickets container -->
+      <div id="Tickets" class="tab-content">
+        <div class="inputBoxNum">
+          <div class="container-ticket-num">
+            <label for="tickets">No. of tickets:</label>
+            <input type="text" id="tickets" name="tickets" value="1">
+          </div>
+          <div class="container-calendar">
+            <label for="calendar">Calendar:</label>
+            <input type="date" id="calendar" name="calendar">
+          </div>
+        </div>
+
+        <div class="inputBoxChoice">
+          <div class="container-ticket-title">
+            <h3> Choose your tickets</h3>
+          </div>
+          <div class="container-ticket-select">
+            <input type="checkbox" id="selectMarvel"></checkbox>
+            <label class="label-checkbox" for="selectMarvel">Marvel</label>
+            <input type="checkbox" id="selectDC"></checkbox>
+            <label class="label-checkbox" for="selectDC">DC</label>
+          </div>
+        </div>
+
+        <div class="container-ticket-submit">
+          <button onclick="return confirm('Confirm Payment?')">Buy Tickets</button>
+        </div>
+      </div>
+
+      <!-- Promotions container -->
+      <div id="Promo" class="tab-content">
+        <div class="container-promo">
+          <div class="promo-box">
+            <p>The promo text should go here.
+              It's usually short and takes
+              three lines.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div class="container-promo">
+          <div class="promo-box">
+            <p>The promo text should go here.
+              It's usually short and takes
+              three lines.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div class="container-promo">
+          <div class="promo-box">
+            <p>The promo text should go here.
+              It's usually short and takes
+              three lines.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div class="container-promo">
+          <div class="promo-box">
+            <p>The promo text should go here.
+              It's usually short and takes
+              three lines.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mmapcontainer">
+        <p>
+          <a href="marvel.html">
+            <img class=" map-mm marvelmapmm" src="https://www.picclickimg.com/d/l400/pict/401955416027_/Thor-Doujinshi-Comic-Book-Thor-x-Loki-My.jpg" alt="marvelmap1">
+          </a>
+        </p>
+        <p>
+          <a href="marvel.html">
+            <img class="map-mm marvelmapmm" src="https://www.picclickimg.com/d/l400/pict/401955416027_/Thor-Doujinshi-Comic-Book-Thor-x-Loki-My.jpg" alt="marvelmap2">
+          </a>
+        </p>
+        <p>
+          <a href="marvel.html">
+            <img class="map-mm marvelmapmm" src="https://www.picclickimg.com/d/l400/pict/401955416027_/Thor-Doujinshi-Comic-Book-Thor-x-Loki-My.jpg" alt="marvelmap3">
+          </a>
+        </p>
+        <p>
+          <a href="dc.html">
+            <img class="map-mm dcmapmm" src="https://images8.alphacoders.com/985/thumb-1920-985625.jpg" alt="dcmap1">
+          </a>
+        </p>
+        <p>
+          <a href="dc.html">
+            <img class="map-mm dcmapmm" src="https://images8.alphacoders.com/985/thumb-1920-985625.jpg" alt="dcmap2">
+          </a>
+        </p>
+        <p>
+          <a href="dc.html">
+            <img class="map-mm dcmapmm" src="https://images8.alphacoders.com/985/thumb-1920-985625.jpg" alt="dcmap3">
+          </a>
+        </p>
+      </div>
+
+    <!-- FAQ -->
+    <div class="container-faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <button class="accordion">FAQ Question #1</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion">FAQ Question #2</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion">FAQ Question #3</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat..</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="container-cta">
+      <h1>Can't find what you're looking for?</h1>
+      <!-- Wrapper Div -->
+      <div>
+        <button class="btn-cta">Send us an enquiry</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+
+
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
