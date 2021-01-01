@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MarvelDC Theme Park</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- Wrap all your divs within this div to apply the margin -->
+  <div class="container-page">
+
+    <!-- Navbar -->
+    <div class="container-navbar">
+      <div class="navbar" id="mynavbar">
+        <button onclick="activeNav()" class="navres-icon"><img src="https://img.icons8.com/ios-glyphs/30/000000/menu-rounded.png" /></button>
+        <!--Theme park logo-->
+        <div class="themepark-logo"></div>
+        <!--Links to marvel/dc pages-->
+        <ul>
+          <li><a class="navbar-page-link" href="#marvel.html">Marvel</a></li>
+          <li><a class="navbar-page-link" href="#dc.html">DC</a></li>
+        </ul>
+        <button onclick="searchClose();activeSearch()" class="search-icon"><img id="searchicon-change" src="https://img.icons8.com/ios-glyphs/24/000000/search.png" /></button>
+      </div>
+
+      <div id="searchbar" class="search-open">
+        <form class="search-form">
+          <input class="search-box" type="text" placeholder="Search.." name="search">
+          <button class="search-box-icon" type="submit"><img src="https://img.icons8.com/ios-glyphs/24/000000/search.png" /></button>
+        </form>
+      </div>
+
+      <div id="navres" class="navres-open">
+        <ul>
+          <li><a class="navres-page-link" href="marvel.html">Marvel</a></li>
+          <li><a class="navres-page-link" href="dc.html">DC</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Banner is removed because it doesn't really fit with the site. -->
+
+    <!-- Voting jumbotron -->
+    <div class="container-vote">
+      <div class="vote-img-container">
+        <img class="vote-img" src="https://i.pinimg.com/originals/b3/1d/ea/b31deaeec1969b57ed01dba111f8c1a7.jpg">
+      </div>
+      <div class="vote-content">
+        <div class="vote-description">
+          <h1>Vote now!</h1>
+          <p>Choose which superheroes will be dressed up in Christmas costumes. Those who lose will receive a terrible punishment!</p>
+        </div>
+        <div class="vote-select">
+          <button type="button" class="btn-vote">Marvel</button>
+          <button type="button" class="btn-vote">DC</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TODO: Tickets/Promo layout has been fixed, functionality is required because the previous script does not work anymore -->
+    <!-- Tickets/Promo -->
+    <div class="container-ticket-promo">
+      <div class="container-tab">
+        <button class="tablinks" onclick="showTickets()">Tickets</button>
+        <button class="tablinks" onclick="showPromos()">Promo</button>
+      </div>
+
+      <!-- Tickets -->
+      <div class="container-ticket" id="container-ticket">
+
+        <div class="select-num-day">
+
+          <!-- Select number of tickets -->
+          <div class="select-number">
+            <label for="tickets">No. of tickets:</label>
+            <input type="text" name="tickets" value="1">
+          </div>
+
+          <!-- Select days of tickets -->
+          <div class="select-day">
+            <label for="calendar">You're visting on:</label>
+            <input type="date" name="calendar">
+          </div>
+
+        </div>
+        <div class="select-type">
+          <!-- Select type of tickets -->
+          <h3>Where would you like to visit?</h3>
+          <label>Marvel</label>
+          <input type="checkbox" id="select-marvel">
+          <label>DC</label>
+          <input type="checkbox" id="select-dc">
+        </div>
+
+        <div class="submit-ticket">
+          <!-- Submit choice for payment -->
+          <button class="btn-submit">Buy Tickets</button>
+        </div>
+      </div>
+
+      <!-- Promos -->
+      <div class="container-promo" id="container-promo">
+        <div class="promo-content">
+          <p>Our latest promotion is written here.</p>
+          <button class="btn-submit">Learn More</button>
+        </div>
+        <div class="promo-content">
+          <p>Our latest promotion is written here.</p>
+          <button class="btn-submit">Learn More</button>
+        </div>
+        <div class="promo-content">
+          <p>Our latest promotion is written here.</p>
+          <button class="btn-submit">Learn More</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TODO: Map Image -->
+    <div class="container-map">
+      <a href="marvel.html"><img class="map-img map-marvel-1" src="images/map_marvel-zone-1.png"></a>
+      <a href="marvel.html"><img class="map-img map-marvel-2" src="images/map_marvel-zone-2.png"></a>
+      <a href="marvel.html"><img class="map-img map-marvel-3" src="images/map_marvel-zone-3.png"></a>
+      <a href="dc.html"><img class="map-img map-dc-1" src="images/map_dc-zone-1.png"></a>
+      <a href="dc.html"><img class="map-img map-dc-2" src="images/map_dc-zone-2.png"></a>
+      <a href="dc.html"><img class="map-img map-dc-3" src="images/map_dc-zone-3.png"></a>
+    </div>
+
+    <!-- Ratings -->
+    <div class="container-ratings">
+
+      <!-- Ratings Heading -->
+      <div class="container-ratings-header">
+        <h2>We're one of the best theme parks in the world.</h2>
+      </div>
+
+      <div class="container-ratings-total">
+        <div class="container-star">
+          <span class="rating-heading">Ratings</span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star-half"></span>
+        </div>
+        <p>4.4 average based on 366 reviews.</p>
+      </div>
+
+      <!-- Ratings bar -->
+      <div>
+        <hr style="border:2px solid #FFD700">
+      </div>
+
+      <!-- 5-star -->
+      <div>
+        <div class="container-bar-display">
+            <div class="rating-text-left">5 Stars</div>
+            <div class="rating-bar-container">
+                <div class="bar-5"></div>
+            </div>
+            <div class="rating-text-right">264</div>
+        </div>
+      </div>
+        
+        <!-- 4-star -->
+        <div>
+         <div class="container-bar-display">
+             <div class="rating-text-left">4 Stars</div>
+             <div class="rating-bar-container">
+                 <div class="bar-4"></div>
+             </div>
+             <div class="rating-text-right">53</div>
+         </div>
+       </div>
+        
+        <!-- 3-star -->
+        <div>
+         <div class="container-bar-display">
+             <div class="rating-text-left">3 Stars</div>
+             <div class="rating-bar-container">
+                 <div class="bar-3"></div>
+             </div>
+             <div class="rating-text-right">7</div>
+         </div>
+        </div>
+        
+        <!-- 2-star -->
+        <div>
+         <div class="container-bar-display">
+             <div class="rating-text-left">2 Stars</div>
+             <div class="rating-bar-container">
+                 <div class="bar-2"></div>
+             </div>
+             <div class="rating-text-right">14</div>
+         </div>
+        </div>
+        
+        <!-- 1-star -->
+        <div>
+         <div class="container-bar-display">
+             <div class="rating-text-left">1 Star</div>
+             <div class="rating-bar-container">
+                 <div class="bar-1"></div>
+             </div>
+             <div class="rating-text-right">28</div>
+         </div>
+        </div>   
+      </div>
+
+    </div>
+
+    <!-- FAQ -->
+    <div class="container-faq">
+      <h1>Frequently Asked Questions</h1>
+
+      <button class="accordion">FAQ Question #1</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion">FAQ Question #2</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion">FAQ Question #3</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor s it amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat..</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="container-cta">
+      <h1>Can't find what you're looking for?</h1>
+      <!-- Wrapper Div -->
+      <div>
+        <button class="btn-cta">Send us an enquiry</button>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+      
+    <div class="container-footer">
+
+      <!-- Column 1: Attractions -->
+      <div>
+        <div class="container-attractions">
+          <h2> Attractions </h2>
+          <p> <a href="Marvel.html">Marvel</a> <br>
+            <a href="DC.html">DC</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 2: Visitor -->
+      <div>
+        <div class="container-visitor">
+          <h2> Visitor Information </h2>
+          <p> <a href="Ticketing.html">Ticketing</a> <br>
+            <a href="Promotions.html">Promotions</a> <br>
+            <a href="ContactUs.html">Contact Us!</a>
+          </p>
+        </div>
+      </div>
+        
+      <!-- Column 3: Contact, Social, Legal -->
+      <div>
+        <div class="container-others">
+            
+        <!-- Contact -->
+        <div class="container-contact">
+          <h4>461 Clementi Rd, Singapore 599491
+            <a href="email">customerservice@MarvelDc.com</a>
+          </h4>
+        </div>
+        <!-- Social Media -->
+          <div class="container-social-media">
+            <p>Connect with us!</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        <!-- Popups -->
+          <div class="popups">
+            <h5> <a href="Privacy Policy Pop-up">Privacy Policy</a> &nbsp;
+            <a href="Terms & Conditions Pop-up">Terms and Conditions</a> &nbsp;
+            <a href="Cookie Policy Pop-up">Cookie Policy</a>
+            </h5>
+            </div>
+        </div>
+      </div>
+        
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

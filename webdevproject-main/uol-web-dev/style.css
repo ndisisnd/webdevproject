@@ -1,0 +1,482 @@
+/* Typography DO NOT ALTER */
+*, body {
+  font: 12px 'Work Sans', serif;
+}
+
+h1 {
+  font: 800 2.5em 'Work Sans', serif;
+  /* style weight size/line-height font-family */
+}
+
+h2 {
+  font: 600 2em 'Work Sans', serif;
+}
+
+h3 {
+  font: 400 1.5em 'Work Sans', serif;
+}
+
+p {
+  font: 400 1em 'Work Sans', serif;
+}
+
+footer-text {
+  font: 700 0.75em 'Work Sans', serif;
+}
+
+navbar-text {
+  font: 700 1.25em 'Work Sans', serif;
+}
+
+/* Wraps the entire page to give it a margin DO NOT ALTER */
+.container-page {
+  margin: 0em 15em 0em 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Styling for Vote */
+.container-vote {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2em;
+}
+
+.vote-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.vote-content {
+  padding: 4em;
+}
+
+/* Styling for Tickets Promo DO NOT ALTER */
+.container-tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-tab button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  cursor: pointer;
+  font: bolder 2em 'Work Sans', serif;
+  text-transform: uppercase;
+  height: 2em;
+}
+
+.container-ticket-promo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+#container-ticket {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+}
+
+#container-promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+}
+
+.promo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.select-number, .select-day, .select-type {
+  padding: 1em;
+}
+
+label {
+  font-size: 1.25em;
+}
+
+/* Styling for CTA DO NOT ALTER */
+.container-cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-cta, .btn-submit {
+  text-transform: uppercase;
+  padding: 1em;
+  cursor: pointer;
+}
+
+/* Styling for FAQ DO NOT ALTER */
+.container-faq {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1.5em;
+  width: 60%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: 0.25em;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 1.5em;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 60%;
+}
+
+/* Styling for Ratings */
+.container-ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container-ratings-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-bar-display {
+  padding-top: 0.5em;
+}
+
+.rating-heading {
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.rating-text {
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+}
+
+.rating-text-left {
+    float: left;
+    width: 10%;
+    margin-right: 5px;
+}
+
+.rating-text-right {
+    text-align: right;
+}
+
+.fa {
+  font-size: 1.75em;
+}
+
+.fa-star-half, .fa-star {
+  color: gold;
+}
+
+.rating-bar-container {
+  width: 79%;
+  background-color: #f1f1f1;
+  right: 75px;
+  color: white;
+  float: left;
+}
+
+.bar-5 {
+  width: 72%;
+  height: 14px;
+  background-color: #00FF00;
+}
+
+.bar-4 {
+  width: 15%;
+  height: 14px;
+  background-color: #00FF00;
+}
+
+.bar-3 {
+  width: 2%;
+  height: 14px;
+  background-color: #00FF00;
+}
+
+.bar-2 {
+  width: 4%;
+  height: 14px;
+  background-color: #00FF00;
+}
+
+.bar-1 {
+  width: 8%;
+  height: 14px;
+  background-color: #00FF00;
+}
+
+/* Styling for Footer DO NOT ALTER */
+footer {
+  position: absolute;
+  bottom: 100;
+  width: 100%;
+  text-align: center;
+}
+
+.container-footer {
+  column-count: 3;
+  column-gap: 10px;
+  column-rule-width: 1px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-attractions {
+  width: 350px;
+  height: 200px;
+}
+
+.container-visitor {
+  width: 350px;
+  height: 200px;
+}
+
+.container-others {
+  width: 350px;
+  height: 200px;
+}
+
+.container-contact {
+  height: 35px;    
+}
+
+.container-social-media {
+  height: 55px;
+}
+
+.fa:hover {
+  opacity: 0.65;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.fa-instagram {
+  background: #3f729b;
+  color: white;
+  padding: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.fa-youtube {
+  background: #c4302b;
+  color: white;
+  padding: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+/* Styling for Navbar */
+.navbar {
+  padding: 5px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar li {
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.themepark-logo {
+  width: 150px;
+  background-color: grey;
+  display: flex;
+}
+
+.navbar-page-link {
+  font-size: 17px;
+}
+
+.search-icon {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.search-open {
+  display: none;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-box {
+  padding: 10px;
+  width: 90%;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  background: #f1f1f1;
+}
+
+.search-box-icon {
+  padding: 7px;
+  border: 1px solid grey;
+  background: none;
+  min-width: 38px;
+}
+
+.show-searchbar {
+  padding: 10px;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navres-icon {
+  display: none;
+}
+
+.navres-open {
+  display: none;
+}
+
+@media only screen and (max-width: 660px) {
+  .navbar {
+    padding: 5px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar li {
+    display: none;
+  }
+
+  .themepark-logo {
+    width: 150px;
+    background-color: grey;
+    display: flex;
+  }
+
+  .navbar-page-link {
+    display: none;
+  }
+
+  .search-box {
+    width: 70%;
+  }
+
+  .navres-icon {
+    padding: 11px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .navres-open {
+    display: none;
+  }
+
+  .navres-open ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navres-open li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+  }
+
+  .show-navres {
+    width: 50%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+  }
+}
+
+/* Styling for Map */
+.container-map {
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
+}
+
+.map-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* TODO: Responsive layout for styling */

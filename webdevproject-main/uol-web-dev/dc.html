@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DC Zone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="container-page">
+
+    <!-- Navbar -->
+    <div class="container-navbar">
+      <div class="navbar" id="mynavbar">
+        <button onclick="activeNav()" class="navres-icon"><img src="https://img.icons8.com/ios-glyphs/30/000000/menu-rounded.png" /></button>
+        <!--Theme park logo-->
+        <div class="themepark-logo"></div>
+        <!--Links to marvel/dc pages-->
+        <ul>
+          <li><a class="navbar-page-link" href="#marvel.html">Marvel</a></li>
+          <li><a class="navbar-page-link" href="#dc.html">DC</a></li>
+        </ul>
+        <button onclick="searchClose();activeSearch()" class="search-icon"><img id="searchicon-change" src="https://img.icons8.com/ios-glyphs/24/000000/search.png" /></button>
+      </div>
+
+      <div id="searchbar" class="search-open">
+        <form class="search-form">
+          <input class="search-box" type="text" placeholder="Search.." name="search">
+          <button class="search-box-icon" type="submit"><img src="https://img.icons8.com/ios-glyphs/24/000000/search.png" /></button>
+        </form>
+      </div>
+
+      <div id="navres" class="navres-open">
+        <ul>
+          <li><a class="navres-page-link" href="marvel.html">Marvel</a></li>
+          <li><a class="navres-page-link" href="dc.html">DC</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Footer -->
+      <div class="container-footer">
+
+        <!-- Column 1: Attractions -->
+        <div>
+          <div class="container-attractions">
+            <h2> Attractions </h2>
+            <p> <a href="Marvel.html">Marvel</a> <br>
+              <a href="DC.html">DC</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Column 2: Visitor -->
+        <div>
+          <div class="container-visitor">
+            <h2> Visitor Information </h2>
+            <p> <a href="Ticketing.html">Ticketing</a> <br>
+              <a href="Promotions.html">Promotions</a> <br>
+              <a href="ContactUs.html">Contact Us!</a>
+            </p>
+          </div>
+        </div>
+        <!-- Column 3: Contact, Social, Legal -->
+        <div>
+          <!-- Contact -->
+          <div class="container-contact">
+            <h5>461 Clementi Rd, Singapore 599491
+              <a href="email">customerservice@MarvelDc.com</a>
+            </h5>
+          </div>
+          <!-- Social Media -->
+          <div>
+            <div class="container-social-media">
+              <h5>Connect with us!</h5>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <div>
+              <!-- Popups -->
+              <div class="popups">
+                <h5> <a href="Privacy Policy Pop-up">Privacy Policy</a> &nbsp;
+                  <a href="Terms & Conditions Pop-up">Terms and Conditions</a> &nbsp;
+                  <a href="Cookie Policy Pop-up">Cookie Policy</a>
+                </h5>
+              </div>
+            </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
