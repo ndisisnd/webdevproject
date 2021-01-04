@@ -174,13 +174,29 @@ label {
   padding-top: 0.5em;
 }
 
+.rating-heading {
+    font-size: 18px;
+    margin-right: 12px;
+}
+
 .rating-text {
   padding: 0px;
   margin: 0px;
+  text-align: left;
+}
+
+.rating-text-left {
+    float: left;
+    width: 10%;
+    margin-right: 5px;
+}
+
+.rating-text-right {
+    text-align: right;
 }
 
 .fa {
-  font-siz: 1.75em;
+  font-size: 1.75em;
 }
 
 .fa-star-half, .fa-star {
@@ -188,10 +204,11 @@ label {
 }
 
 .rating-bar-container {
-  width: 100%;
+  width: 79%;
   background-color: #f1f1f1;
-  text-align: center;
+  right: 75px;
   color: white;
+  float: left;
 }
 
 .bar-5 {
@@ -233,8 +250,34 @@ footer {
 }
 
 .container-footer {
+  column-count: 3;
+  column-gap: 10px;
+  column-rule-width: 1px;
   display: flex;
   justify-content: space-around;
+}
+
+.container-attractions {
+  width: 350px;
+  height: 200px;
+}
+
+.container-visitor {
+  width: 350px;
+  height: 200px;
+}
+
+.container-others {
+  width: 350px;
+  height: 200px;
+}
+
+.container-contact {
+  height: 35px;    
+}
+
+.container-social-media {
+  height: 55px;
 }
 
 .fa:hover {
@@ -244,8 +287,9 @@ footer {
 .fa-facebook {
   background: #3B5998;
   color: white;
-  padding: 7px;
-  width: 28px;
+  padding: 8px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   opacity: 1;
 }
@@ -253,8 +297,9 @@ footer {
 .fa-instagram {
   background: #3f729b;
   color: white;
-  padding: 7px;
-  width: 28px;
+  padding: 8px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   opacity: 1;
 }
@@ -262,8 +307,9 @@ footer {
 .fa-twitter {
   background: #55ACEE;
   color: white;
-  padding: 7px;
-  width: 28px;
+  padding: 8px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   opacity: 1;
 }
@@ -271,8 +317,9 @@ footer {
 .fa-youtube {
   background: #c4302b;
   color: white;
-  padding: 7px;
-  width: 28px;
+  padding: 8px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   opacity: 1;
 }
