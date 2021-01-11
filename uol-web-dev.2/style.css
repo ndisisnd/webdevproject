@@ -1,0 +1,73 @@
+/* This comment is here because the file cannot be empty */
+
+/* ticketing style */
+.container-tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-tab button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  cursor: pointer;
+  font: bolder 2em 'Work Sans', serif;
+  text-transform: uppercase;
+  height: 2em;
+}
+
+.container-ticket-promo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+#container-ticket {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+}
+
+#container-promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+}
+
+.promo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.select-number, .select-day, .select-type {
+  padding: 1em;
+}
+
+label {
+  font-size: 1.25em;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  input[type="text"] {
+    width: 12%;
+  }
+  input[type="date"] {
+    width: 85%;
+  }
+  .btn-submit {
+    height: 50px;
+    width: 60px;
+  }
+}

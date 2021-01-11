@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>MarvelDC Theme Park</title>
+</head>
+
+<body>
+     <!-- Tickets/Promo -->
+    <div class="container-ticket-promo">
+      <div class="container-tab">
+        <button class="tablinks" onclick="showTickets()">Tickets</button>
+        <button class="tablinks" onclick="showPromos()">Promo</button>
+      </div>
+
+      <!-- Tickets -->
+      <div class="container-ticket" id="container-ticket">
+
+        <div class="select-num-day">
+
+          <!-- Select number of tickets -->
+          <div class="select-number" >
+            <label for="tickets">No. of tickets:</label>
+            <input type="text" name="tickets" value="1" id="numberOfTickets">
+          </div>
+
+          <!-- Select days of tickets -->
+          <div class="select-day">
+            <label for="calendar">You're visting on:</label>
+            <input type="date" name="calendar" id="date">
+          </div>
+
+        </div>
+        <div class="select-type">
+          <!-- Select type of tickets -->
+          <h3>Where would you like to visit?</h3>
+          <label>Marvel</label>
+          <input type="checkbox" id="select-marvel">
+          <label>DC</label>
+          <input type="checkbox" id="select-dc">
+        </div>
+
+        <div class="submit-ticket">
+          <!-- Submit choice for payment -->
+          <button class="btn-submit" onClick="submit()" id="submitBtn">Buy Tickets</button>
+        </div>
+      </div>
+    
+</body>
+</html>
