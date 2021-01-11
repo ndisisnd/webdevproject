@@ -1,5 +1,17 @@
+let btnTickets = document.getElementById('show-tickets');
+let btnPromo = document.getElementById('show-promos');
+const contTickets = document.getElementById('container-ticket');
+const contPromos = document.getElementById('container-promo');
 
+btnTickets.addEventListener('click', () => {
+  contTickets.style.display = "flex";
+  contPromos.style.display = "none";
+})
 
+btnPromo.addEventListener('click', () => {
+  contTickets.style.display = "none";
+  contPromos.style.display = "flex";
+})
 
 //FAQ script
 var acc = document.getElementsByClassName("accordion");
@@ -17,16 +29,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// Ticket/Promotion script
-function showPromos() {
-  let promo = document.getElementById("container-promo");
-  let display = window
-    .getComputedStyle(promo, null)
-    .getPropertyValue("display");
-  if (display === "flex") {
-    display = "none";
-  }
-}
+
 
 //Navbar script
 function searchClose() {
@@ -64,6 +67,7 @@ function toggleVisibility(selectedTab) {
   for (var i = 0; i < content.length; i++) {
     if (content[i].id == selectedTab) {
       content[i].style.display = "block";
+      selectedTab.stopPropagation();
     } else {
       content[i].style.display = "none";
     }
